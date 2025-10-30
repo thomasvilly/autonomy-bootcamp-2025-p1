@@ -3,7 +3,6 @@ Runs colour detection on sample image.
 """
 
 import pathlib
-import time
 import os
 
 # debug modules.detect_colours import ... not being found
@@ -28,8 +27,8 @@ IMAGE = os.path.join(script_dir, IMAGE)
 
 
 # labels for red and blue colour detections
-BLUE_DETECTION = OUTPUT_PATH / f"blue_colour_detection.jpg"
-RED_DETECTION = OUTPUT_PATH / f"red_colour_detection.jpg"
+BLUE_DETECTION = OUTPUT_PATH / "blue_colour_detection.jpg"
+RED_DETECTION = OUTPUT_PATH / "red_colour_detection.jpg"
 
 blue_detector = DetectBlue.create()
 red_detector = DetectRed.create()
